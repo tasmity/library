@@ -1,0 +1,6 @@
+# IDE
+.idea/
+.gradle/
+
+# Mac OS files
+.DS_Store
