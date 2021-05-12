@@ -1,7 +1,9 @@
+package com.java.sort;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class JavaTest {
+public class VersionTest {
 
     public static void main(String[] args) {
         final List<String> chapters = new ArrayList<>();

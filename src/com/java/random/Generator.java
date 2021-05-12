@@ -3,9 +3,12 @@ package com.java.random;
 import java.util.Random;
 
 public class Generator {
+    private Generator() {
+        throw new IllegalStateException("Utility class");
+    }
     static String symbol = "0123456789abcdefghijklmnopqrstuvwxyz";
-    Random random = new Random();
-    String randomSecret(int secretLength, int secretSymbol) {
+    static Random random = new Random();
+    static String randomSecret(int secretLength, int secretSymbol) {
         StringBuilder sb = new StringBuilder();
         while (sb.length() < secretLength) {
             char c = symbol.charAt(random.nextInt(secretSymbol - 1));
